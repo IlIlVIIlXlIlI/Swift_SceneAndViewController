@@ -21,7 +21,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Go to Yosemite"/>
                                 <connections>
-                                    <segue destination="caf-Mt-mnW" kind="presentation" id="OZ8-Iy-4fT"/>
+                                    <segue destination="caf-Mt-mnW" kind="presentation" modalTransitionStyle="flipHorizontal" id="OZ8-Iy-4fT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -45,12 +45,21 @@
                                 <rect key="frame" x="54" y="119" width="307" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ib2-Xf-dBF">
+                                <rect key="frame" x="158" y="385" width="98" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go BackHome"/>
+                                <connections>
+                                    <segue destination="vGl-Le-oGw" kind="unwind" unwindAction="comeHomeWithSegue:" id="Fze-mY-PCQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HZp-EW-O70"/>
                         <color key="backgroundColor" systemColor="systemGray2Color"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hUW-1d-cIg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="vGl-Le-oGw" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="744.92753623188412" y="93.75"/>
         </scene>
